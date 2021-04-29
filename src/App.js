@@ -1,12 +1,12 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import fantasy from './data/fantasy.json';
 import MyNavBar from './components/MyNavBar';
+import WarningSign from './components/WarningSign';
 import BadgeQTwo from './components/BadgeQTwo';
 import SingleBook from './components/SingleBook';
 import BookList from './components/BookList';
 import FilterBooks from './components/FilterBooks';
-import WarningSign from './components/WarningSign'
+import fantasy from './data/fantasy.json';
 
 
 

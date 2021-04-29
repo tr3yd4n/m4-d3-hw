@@ -1,6 +1,4 @@
-import { SingleBook } from './SingleBook';
-import { col, Container, row } from 'react-bootstrap';
-import fantasy from './data/fantasy.json';
+import SingleBook from './SingleBook';
 
 const BookList = ({ books }) => (
     <container>
