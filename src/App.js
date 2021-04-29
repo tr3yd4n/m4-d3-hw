@@ -1,24 +1,28 @@
-import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import fantasy from './data/fantasy.json';
+import MyNavBar from './components/MyNavBar';
+import BadgeQTwo from './components/BadgeQTwo';
+import SingleBook from './components/SingleBook';
+import BookList from './components/BookList';
+import FilterBooks from './components/FilterBooks';
 import WarningSign from './components/WarningSign'
-import MyBadge from './components/MyBadge'
-import SingleBook from './components/SingleBook'
-import BookList from './components/BookList'
-import fantasyBooks from './fantasyBooks.json'
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <WarningSign text="Watch out again!" />
-        <MyBadge text="NEW!!" color="info" />
-        <SingleBook book={fantasyBooks[0]} />
-        <BookList books={fantasyBooks} />
-      </header>
+    <div>
+      <MyNavBar />
+      <WarningSign variant="danger" text="DANGER WILL ROBINSON!" />
+      <BadgeQTwo text="SUP YALL ITS YA BOI ASMONGOLD" color="info" />
+      <SingleBook book={fantasy[0]} />
+      <BookList books={fantasy} />
+      <FilterBooks />
+
+
     </div>
-  )
+  );
 }
 
-export default App
-
-console.log("hello")
+export default App;
