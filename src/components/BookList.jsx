@@ -1,19 +1,18 @@
-import { SingleBook } from './SingleBook';
-import { col, Container, row } from 'react-bootstrap';
-import fantasy from './data/fantasy.json';
+import SingleBook from './SingleBook';
+import { Col, Container, Row } from 'react-bootstrap'
 
 const BookList = ({ books }) => (
-    <container>
-        <row>
+    <Container>
+        <Row>
             {
                 books.map(b => (
-                    <col xs={3}>
+                    <Col xs={3}>
                         <SingleBook book={b} />
-                    </col>
+                    </Col>
                 ))
             }
-        </row>
-    </container>
+        </Row>
+    </Container>
 )
 
 export default BookList
