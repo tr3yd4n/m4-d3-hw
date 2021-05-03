@@ -1,17 +1,13 @@
-import { InputGroup, FormControl } from 'react-bootstrap'
+// import { InputGroup, FormControl, Form } from 'react-bootstrap'
 
-const FilterBooks = () => (
-    <div>
-        <InputGroup className="mb-3">
+// const FilterBooks = () => (
+//     <div>
+//         <Form.Group className="mb-3">
+//             <Form.Label>Search</Form.Label>
+//             <Form.Control type="text" placeholder="Search" />
+//         </Form.Group>
+//     </div>
+// )
 
-            <FormControl
-                placeholder="Username"
-                aria-label="Username"
-                aria-describedby="basic-addon1"
-            />
-        </InputGroup>
-    </div>
-)
-
-export default FilterBooks
+// export default FilterBooks
 
