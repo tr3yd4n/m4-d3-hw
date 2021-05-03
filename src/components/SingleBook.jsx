@@ -1,6 +1,7 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
 
+
 class SingleBook extends React.Component {
     state = {
         selected: false
@@ -17,6 +18,8 @@ class SingleBook extends React.Component {
                     <Card.Title>{this.props.book.title}</Card.Title>
                 </Card.Body>
             </Card>
+
+            //<CommentArea show={boolean(this.state.showComments)} deselectBook={() => this.setState({ selected : '' })}></CommentArea>
         )
     }
 }
